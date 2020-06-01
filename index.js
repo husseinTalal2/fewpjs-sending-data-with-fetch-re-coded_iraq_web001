@@ -38,6 +38,6 @@ function submitData(userName, Email){
     body.innerHTML = `${response.id}`;
   })
   .catch( err => {
-    body.innerHTML = "there is an error";
+    body.innerHTML = err;
   })
 }
