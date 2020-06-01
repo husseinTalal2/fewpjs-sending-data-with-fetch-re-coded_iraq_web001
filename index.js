@@ -31,4 +31,8 @@ function submitData(userName, Email){
     body: JSON.stringify(formData)
   };
   return fetch("http://localhost:3000/users",configObj)
+  .then(response => {
+    response.json();
+    console.log(response);
+  })
 }
