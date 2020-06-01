@@ -19,8 +19,8 @@ const email = document.getElementById('email').value;
 
 function submitData(name, email){
   let formData = {
-    dogName: userName,
-    dogBreed: Email
+    dogName: name,
+    dogBreed: email
   };
   let configObj = {
     method: "POST",
