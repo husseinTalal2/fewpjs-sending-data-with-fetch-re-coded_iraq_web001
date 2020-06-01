@@ -33,6 +33,6 @@ function submitData(userName, Email){
   return fetch("http://localhost:3000/users",configObj)
   .then(response => {
     response.json();
-    console.log(response);
+    document.getElementsByTagName('body').appendChild(response.id);
   })
 }
