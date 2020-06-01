@@ -37,4 +37,7 @@ function submitData(userName, Email){
   .then(response => {
     body.innerHTML = `${response.id}`;
   })
+  .catch( err => {
+    body.innerHTML = "there is an error";
+  })
 }
