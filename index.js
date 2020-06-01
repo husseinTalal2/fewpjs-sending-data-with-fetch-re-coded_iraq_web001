@@ -15,7 +15,7 @@
 //   console.log(error.message);})
 const name = document.getElementById('name').value;
 const email = document.getElementById('email').value;
-const body = document.getElementByTagName('body');
+const body = document.getElementByTagName('body')[0];
 
 function submitData(userName, Email){
   let formData = {
