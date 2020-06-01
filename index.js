@@ -13,11 +13,11 @@
 //   .catch(function(error) {
 //   alert("Bad things! Ragnarők!");
 //   console.log(error.message);})
-const userName = document.getElementById('name').value;
-const Email = document.getElementById('email').value;
+const name = document.getElementById('name').value;
+const email = document.getElementById('email').value;
 
 
-function submitData(userName, Email){
+function submitData(name, email){
   let formData = {
     dogName: userName,
     dogBreed: Email
