@@ -16,7 +16,6 @@
 const name = document.getElementById('name').value;
 const email = document.getElementById('email').value;
 const body = document.getElementByTagName('body');
-console.log(body);
 
 function submitData(userName, Email){
   let formData = {
@@ -36,6 +35,6 @@ function submitData(userName, Email){
     return response.json();
   })
   .then(response => {
-    response.
+    body.innerHTML = `${response.id}`;
   })
 }
