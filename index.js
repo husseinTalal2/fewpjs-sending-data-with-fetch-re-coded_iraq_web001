@@ -17,10 +17,10 @@ const name = document.getElementById('name').value;
 const email = document.getElementById('email').value;
 
 
-function submitData(name, email){
+function submitData(userName, Email){
   let formData = {
-    dogName: name,
-    dogBreed: email
+    name: userName,
+    email: Email
   };
   let configObj = {
     method: "POST",
